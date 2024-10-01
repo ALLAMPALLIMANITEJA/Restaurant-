@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE SPICE DELIGHT</title>
+        <link rel="icon" href="HangIn.png" alt="HangIn logo">
+        <link rel="stylesheet" href="main_page.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body style="background-color: black;">
+     <div class="style">
+    <div class="content">
+        <div class="glow">
+            <br>
+        <h1 style="font-family: Comic Sans MS;"><b>THE SPICE DELIGHT</b></h1>
+    </div><br><br>
+    <h3 style="font-family: Comic Sans MS;">Where every flavor tells a story and</h3>
+    <h3 style="font-family: Comic Sans MS;">A taste you'll remember.</h3>
+    </div>
+   
+     <div class="register">
+     <!-- <button type="submit" class="btn btn-dark button1 button-h1" value="admin" aria-pressed="true" autocomplete="off" id="clk">A<br>D<br>M<br>I<br>N</button> -->
+     <form action="hangin.html" method="get" target="_self">
+        <!-- <button type="submit" class="btn btn-dark button2 button-h2" aria-pressed="true" autocomplete="off" value="USER" id="clk">USER</button> -->
+        <input type="text" class="form-control w-50 text1" placeholder="User Name" id="name">
+        <input type="password" class="form-control w-50 text2" placeholder="Password" id="password">
+        <button type="submit" class="btn btn-primary btlog" onclick="login()" formTarget="_blank" value="LogIn" >LogIn</button>
+        <button type="submit" class="btn btn-primary btsig" formaction="signup.html" value="SignUp">SignUp</button>
+    </form>
+     </div> <!--register-->
+    </div>
+    <img src="deli.png" height="780px" style="position: relative; top:-770px;left: 900px;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
+<script>   
+            function login(){
+        var username,password;
+        username=document.getElementById("name");
+        password=document.getElementById("password");
+        if(username.value.trim() ===""||password.value.trim()===""){
+        alert("please fill all the details");  
+    return false;
+    }
+    else{
+        if(username.value.trim()==="12105736" && password.value.trim()==="mani"){
+            window.location.assign("login.html");
+            return true;
+            alert("login successful");
+        }
+    
+    
+            else{
+                alert("username and password are wrong");
+                return false;
+            }
+        
+       }
+    
+    
+     }
+            
+            </script>
+    
